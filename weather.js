@@ -1,5 +1,6 @@
 
 const weather = document.querySelector(".js-weather");
+const weatherClock = document.querySelector(".js-clock");
 
 const COORDS = "coords";
 const API_KEY = "bfc55d4810358dade1d82cb05e43554a";
