@@ -58,6 +58,7 @@ body {
 
 #ul {
   list-style: none;
+  font-size: 20px;
 }
 
 #span {
@@ -66,7 +67,7 @@ body {
   margin: 0 10px;
   right: 0;
   top: 10px;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 #form {
