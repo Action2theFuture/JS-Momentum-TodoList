@@ -110,3 +110,10 @@ input[type="text"]:focus {
   border: none;
   color: #ffffff;
 }
+
+.weatherIcon {
+  text-align: right;
+  position: fixed;
+  right:0px;
+  top:30px;
+}
