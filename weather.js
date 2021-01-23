@@ -16,7 +16,10 @@ function getWeather(lat, lon) {
       const place = json.name;
       const lat = json.coord.lat;
       const lon = json.coord.lon;
-      weather.innerText = `${tem}🌡 ${place}🗺 lat:${lat} lon:${lon}`;
+      const humidity = json.main.humidity;
+      weather.innerText = 
+      `${tem}🌡 ${humidity}% 
+      ${place}🗺(lat${lat} lon${lon})`;
     });
 }
 function saveCoords(coordsObj) {
