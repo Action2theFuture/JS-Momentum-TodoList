@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Momentum</title>
-      <link href="index.css" rel="stylesheet"/>
-  </head>
-  <body>
-    <div class="js-clock">
-      <h1>00:00</h1>
-    </div>
-    <form class="js-form form">
-      <input type="text" placeholder="What is yout name?"/>
-    </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Write a to do"/>
-    </form>
-      <ul class="js-toDoList"></ul>
-    <span class="js-weather"></span>
-    <script src="clock.js"></script>
-    <script src="greeting.js"></script>
-    <script src="todo.js"></script>
-    <script src="bg.js"></script>
-    <script src="weather.js"></script>
-  </body>
+
+<head>
+	<title>To Do List</title>
+	<meta charset="UTF-8" />
+</head>
+
+<body>
+	<div id = "all">
+		<div id = "clock" class= "js-clock">
+			<div id = "date"></div><br>
+			<div id = "h1" ></div>
+			<div id = "span" class ="js-weather"></div><br>
+		<div>
+		<form class = "js-greetingform">
+			<input type="text" id="name-input" placeholder="이름이 뭐니?"/>
+		</form>
+		<div id = "h4" class = "js-greeting greeting"></div>
+		<form id = "form" class = "js-toDoForm">
+			<input id = "todo-input" type="text" placeholder="오늘 뭐 할거니?"/>
+		</form>
+		<ul id="ul" class="js-toDoList"></ul>
+	</div>
+	<script src="src/index.js"></script>
+	<script src="src/greeting.js"></script>
+	<script src="src/todo.js"></script>
+	<script src="src/bg.js"></script>
+	<script src="src/weather.js"></script>
+</body>
 </html>

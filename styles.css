@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Stylish&display=swap");
+body {
+  font-family: sans-serif;
+  background-color: #020426;
+  color: #f28907;
+  text-align: center;
+}
+
+.js-greetingform,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+  margin: 80px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+#clock {
+  margin: 0 0 0 0;
+}
+
+#date {
+  text-align: left;
+  margin: 0px 0 0 0;
+  top: 10px;
+  font-size: 30px;
+  position: fixed;
+}
+#h1 {
+  font-size: 20px;
+  margin: 20px 0px 0px 0px;
+  text-align: left;
+}
+
+#h4 {
+  font-size: 90px;
+  margin: 30px;
+}
+
+#ul {
+  list-style: none;
+}
+
+#span {
+  text-align: right;
+  position: fixed;
+  right: 0;
+  top: 10px;
+  font-size: 20px;
+}
+
+#form {
+  margin-top: 20px;
+}
+#name-input {
+}
+
+#todo-input {
+}
+input[type="text"] {
+  width: 350px;
+  height: 50px;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+.button {
+  width: 30px;
+  height: 20px;
+  border: 2px solid #34495e;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0 0 0px 0;
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: transparent;
+  border: none;
+  color: #ffffff;
+}
