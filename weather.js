@@ -1,4 +1,3 @@
-
 const weather = document.querySelector(".js-weather");
 const weatherClock = document.querySelector(".js-clock");
 
@@ -18,6 +17,7 @@ function getWeather(lat, lon) {
       const lat = json.coord.lat;
       const lon = json.coord.lon;
       const humidity = json.main.humidity;
+      const weatherIcons = json.weather[0].icon;
       weather.innerText = `${tem}🌡 ${humidity}%\n\n\n\n${place}🗺(lat${lat} lon${lon})`;
       const image = new Image();
       image.src = `http://openweathermap.org/img/wn/${weatherIcons}@2x.png`;
@@ -39,7 +39,7 @@ function handleGeoSucces(position) {
   getWeather(latitude, longitude);
 }
 
-function handleGeoError() { }
+function handleGeoError() {}
 function askForCoords() {
   navigator.geolocation.getCurrentPosition(handleGeoSucces, handleGeoError);
 }
