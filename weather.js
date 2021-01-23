@@ -17,9 +17,14 @@ function getWeather(lat, lon) {
       const lat = json.coord.lat;
       const lon = json.coord.lon;
       const humidity = json.main.humidity;
-      weather.innerText = 
-      `${tem}🌡 ${humidity}% 
+      weather.innerText = `${tem}🌡 ${humidity}%
+      
+      
+
       ${place}🗺(lat${lat} lon${lon})`;
+      const image = new Image();
+      image.src = `http://openweathermap.org/img/wn/${weatherIcons}@2x.png`;
+      weatherClock.appendChild(image).classList.add("weatherIcon");
     });
 }
 function saveCoords(coordsObj) {
