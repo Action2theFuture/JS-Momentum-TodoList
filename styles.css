@@ -63,6 +63,7 @@ body {
 #span {
   text-align: right;
   position: fixed;
+  margin: 0 10px;
   right: 0;
   top: 10px;
   font-size: 20px;

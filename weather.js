@@ -1,3 +1,4 @@
+
 const weather = document.querySelector(".js-weather");
 
 const COORDS = "coords";
@@ -33,7 +34,7 @@ function handleGeoSucces(position) {
   getWeather(latitude, longitude);
 }
 
-function handleGeoError() {}
+function handleGeoError() { }
 function askForCoords() {
   navigator.geolocation.getCurrentPosition(handleGeoSucces, handleGeoError);
 }

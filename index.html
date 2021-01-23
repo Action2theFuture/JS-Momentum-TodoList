@@ -4,28 +4,30 @@
 <head>
 	<title>To Do List</title>
 	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
 
 <body>
-	<div id = "all">
-		<div id = "clock" class= "js-clock">
-			<div id = "date"></div><br>
-			<div id = "h1" ></div>
-			<div id = "span" class ="js-weather"></div><br>
-		<div>
-		<form class = "js-greetingform">
-			<input type="text" id="name-input" placeholder="이름이 뭐니?"/>
-		</form>
-		<div id = "h4" class = "js-greeting greeting"></div>
-		<form id = "form" class = "js-toDoForm">
-			<input id = "todo-input" type="text" placeholder="오늘 뭐 할거니?"/>
-		</form>
-		<ul id="ul" class="js-toDoList"></ul>
-	</div>
-	<script src="index.js"></script>
-	<script src="greeting.js"></script>
-	<script src="todo.js"></script>
-	<script src="bg.js"></script>
-	<script src="weather.js"></script>
+	<div id="all">
+		<div id="clock" class="js-clock">
+			<div id="date"></div><br>
+			<div id="h1"></div>
+			<div id="span" class="js-weather"></div><br>
+			<div>
+				<form class="js-greetingform">
+					<input type="text" style="text-align: center" id="name-input" placeholder="이름이 뭐니?" />
+				</form>
+				<div id="h4" class="js-greeting greeting"></div>
+				<form id="form" class="js-toDoForm">
+					<input id="todo-input" style="text-align: center" type="text" placeholder="오늘 뭐 할거니?" />
+				</form>
+				<ul id="ul" class="js-toDoList"></ul>
+			</div>
+			<script src="index.js"></script>
+			<script src="greeting.js"></script>
+			<script src="todo.js"></script>
+			<script src="bg.js"></script>
+			<script src="weather.js"></script>
 </body>
+
 </html>
