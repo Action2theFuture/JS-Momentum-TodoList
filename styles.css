@@ -11,6 +11,10 @@ body {
   display: none;
 }
 
+.js-weather {
+  margin : 0 10px;
+}
+
 .showing {
   display: block;
   margin: 80px;
